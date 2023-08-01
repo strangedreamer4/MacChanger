@@ -57,7 +57,7 @@ select interface in "${interfaces[@]}"; do
     cd ..
     rm -rf MacChanger
     git clone  https://github.com/strangedreamer4/MacChanger.git
-    cd MacCahger
+    cd MacChanger
     chmod +x macchanger.sh
     ./macchanger.sh
     clear
