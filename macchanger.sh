@@ -62,12 +62,9 @@ select interface in "${interfaces[@]}"; do
     git clone  https://github.com/strangedreamer4/MacChanger.git
     cd MacChanger
     chmod +x macchanger.sh
-    sleep 1
     cd
     cd ..
-    cd MacChanger/
-    cd
-    cd MacChanger/
+    exit
     break
   else
     espeak " Invalid option "
