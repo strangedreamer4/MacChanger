@@ -55,6 +55,7 @@ select interface in "${interfaces[@]}"; do
     change_mac_address "$interface"
     sleep 5
     cd ..
+    cd
     rm -rf MacChanger
     cd 
     sleep 2
@@ -64,9 +65,9 @@ select interface in "${interfaces[@]}"; do
     sleep 1
     cd
     cd ..
-    cd MacChanger
-    ls
-    
+    cd MacChanger/
+    cd
+    cd MacChanger/
     break
   else
     espeak " Invalid option "
