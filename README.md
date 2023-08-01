@@ -1,7 +1,7 @@
 # MacChanger
 macchanger for kali linux
 
-Installation Below ⁠☞↓
+#Installation Below ⁠☞↓
 
 
 (1) git clone https://github.com/strangedreamer4/MacChanger.git
