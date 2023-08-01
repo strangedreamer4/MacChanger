@@ -55,7 +55,7 @@ select interface in "${interfaces[@]}"; do
     change_mac_address "$interface"
     sleep 2
     cd 
-    rm MacChanger
+    rm -rf MacChanger
     git clone  https://github.com/strangedreamer4/MacChanger.git
     cd MacCahger
     chmod +x macchanger.sh
