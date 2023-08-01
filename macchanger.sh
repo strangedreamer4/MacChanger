@@ -60,7 +60,6 @@ select interface in "${interfaces[@]}"; do
     cd MacChanger
     chmod +x macchanger.sh
     ./macchanger.sh
-    clear
     break
   else
     espeak " Invalid option "
