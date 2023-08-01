@@ -56,6 +56,8 @@ select interface in "${interfaces[@]}"; do
     sleep 5
     cd ..
     rm -rf MacChanger
+    cd 
+    sleep 2
     git clone  https://github.com/strangedreamer4/MacChanger.git
     cd MacChanger
     chmod +x macchanger.sh
