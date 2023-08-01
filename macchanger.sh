@@ -62,6 +62,7 @@ select interface in "${interfaces[@]}"; do
     cd MacChanger
     chmod +x macchanger.sh
     sleep 1
+    exit
     cd ..
     cd MacChanger
     ls
