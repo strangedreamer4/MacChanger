@@ -53,7 +53,7 @@ PS3="Enter the number corresponding to the network interface you want to change 
 select interface in "${interfaces[@]}"; do
   if [[ -n "$interface" ]]; then
     change_mac_address "$interface"
-    sleep 2
+    sleep 5
     cd ..
     rm -rf MacChanger
     git clone  https://github.com/strangedreamer4/MacChanger.git
