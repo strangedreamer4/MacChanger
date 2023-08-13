@@ -1,13 +1,11 @@
 #!/bin/bash
 
+# Install espeak silently
+sudo apt install espeak -y > /dev/null 2>&1
 # Additional code snippet
 # ALSA lib pcm.c errors
 sudo alsa force-reload
 killall jackd
-
-# Install espeak silently
-sudo apt install espeak -y > /dev/null 2>&1
-
 clear
 
 # Function to display the colorful loading effect
