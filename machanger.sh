@@ -54,8 +54,8 @@ sudo apt install espeak -y > /dev/null 2>&1
 
 # Additional code snippet
 # ALSA lib pcm.c errors
-sudo alsa force-reload
-killall jackd
+
+killall jackd > /dev/null 2>&1
 
 while true; do
   # Check for local changes in machanger.sh
