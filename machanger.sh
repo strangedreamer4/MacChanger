@@ -71,8 +71,6 @@ select interface in "${interfaces[@]}"; do
     change_mac_address "$interface"
     sleep 5
     git pull
-    exit
-    break
   else
     espeak "Invalid option"
     echo "Invalid option. Please select a valid number."
