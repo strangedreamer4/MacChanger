@@ -70,11 +70,7 @@ select interface in "${interfaces[@]}"; do
   if [[ -n "$interface" ]]; then
     change_mac_address "$interface"
     sleep 5
-    cd ..
-    sudo rm -rf MacChanger
-    git clone https://github.com/strangedreamer4/MacChanger.git
-    sudo chmod +x MacChanger/machanger.sh
-    sleep 2
+    git pull
     exit
     break
   else
