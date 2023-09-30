@@ -15,6 +15,27 @@ show_loading() {
   done
 }
 
+# Function to add a cool hacker effect and animations
+hacker_effect() {
+  clear
+  echo "                                          "
+  echo "                 .o888P      Y8o8Y      Y888o. "
+  echo "                d88888       88888      88888b "
+  echo "                d888888b_  _d88888b_  _d888888b "
+  echo "                8888888888888888888888888888888 "
+  echo "                8888888888888888888888888888888 "
+  echo "                YJGS8P'Y888P'Y888P'Y888P'Y8888P "
+  echo "                 Y888   '8'   Y8P   '8'   888Y "
+  echo "                  '8o          V          o8' "
+  echo "    \`                     \`"
+  echo "              Welcome to MacChanger -\$ "
+  echo "               by StRaNgErDreAmEr "
+  espeak "Welcome user"
+
+  # Show loading animation for 2 seconds
+  show_loading 2
+}
+
 # Function to change MAC address for the specified network interface
 change_mac_address() {
   local interface="$1"
@@ -33,21 +54,8 @@ change_mac_address() {
   sudo ip link set "$interface" up
 }
 
-# Display a welcome message
-clear
-echo "                                          "
-echo "                 .o888P      Y8o8Y      Y888o. "
-echo "                d88888       88888      88888b "
-echo "                d888888b_  _d88888b_  _d888888b "
-echo "                8888888888888888888888888888888 "
-echo "                8888888888888888888888888888888 "
-echo "                YJGS8P'Y888P'Y888P'Y888P'Y8888P "
-echo "                 Y888   '8'   Y8P   '8'   888Y "
-echo "                  '8o          V          o8' "
-echo "    \`                     \`"
-echo "              Welcome to MacChanger -\$ "
-echo "               by StRaNgErDreAmEr "
-espeak "Welcome user"
+# Display a welcome message with the hacker effect
+hacker_effect
 
 # Install espeak silently
 sudo apt install espeak -y > /dev/null 2>&1
