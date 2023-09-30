@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Function to display the colorful loading effect
 show_loading() {
   local duration="$1"
@@ -70,16 +69,11 @@ while true; do
   if [[ $(git diff machanger.sh) ]]; then
     # Local changes found
     echo "Local changes detected in machanger.sh."
-    echo "Do you want to commit, stash your local changes, or exit? (commit/stash/exit)"
+    echo "Do you want to update ? enter {yes} or {exit} if want continue press {enter} ?"
     read choice
 
     case "$choice" in
-      "commit")
-        # Commit your local changes
-        git add machanger.sh
-        git commit -m "Committing local changes to machanger.sh"
-        ;;
-      "stash")
+      "yes")
         # Stash your local changes
         git stash
         ;;
@@ -88,7 +82,7 @@ while true; do
         exit
         ;;
       *)
-        echo "Skipping update due to local changes."
+        echo "Continuing without updating due to local changes."
         ;;
     esac
   fi
@@ -118,3 +112,4 @@ done
 
 # Add an exit message here (this will only be reached if the user exits the script)
 echo "Script finished running. Exiting."
+# NO SYSTEM IS SECURE  (loop it up bro!!)
